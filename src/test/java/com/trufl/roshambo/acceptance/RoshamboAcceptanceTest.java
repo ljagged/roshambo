@@ -58,7 +58,7 @@ public class RoshamboAcceptanceTest {
 		
 		Results results = this.roshamboUT.compete(playerOne, playerTwo, 3);
 		
-		assertThat(results.getWinner()).isEqualTo(playerOne);
+		assertThat(results.getWinner()).isEqualTo(playerTwo);
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class RoshamboAcceptanceTest {
 		
 		Results results = this.roshamboUT.compete(playerOne, playerTwo, 3);
 		
-		assertThat(results.getScore(playerOne)).isEqualTo(3);
-		assertThat(results.getScore(playerTwo)).isEqualTo(0);
+		assertThat(results.getScore(playerOne)).isEqualTo(0);
+		assertThat(results.getScore(playerTwo)).isEqualTo(3);
 	}
 }
