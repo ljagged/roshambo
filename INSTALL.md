@@ -11,7 +11,7 @@
 2. Run `mvn clean install` in the project root. You should see something like:
 
 
-
+```
     Results :
     
     Tests in error:
@@ -34,4 +34,5 @@
     [INFO] Final Memory: 18M/167M
     [INFO] ------------------------------------------------------------------------
 
+```
 If you see a build failure with `UnsupportedOperationExceptions`, that mean that it's building correctly. The next step is to make those tests pass!
